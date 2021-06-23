@@ -1,0 +1,11 @@
+.products {
+  width: 80vw;
+  max-width: 1800px;
+  /* height: 80vh; */
+  /* background-color: wheat; */
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

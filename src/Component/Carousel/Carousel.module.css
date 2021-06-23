@@ -1,0 +1,82 @@
+.container {
+  width: 80vw;
+  height: 60vh;
+  margin: auto;
+  margin-top: 4rem;
+  background-color: wheat;
+  position: relative;
+  max-width: 1800px;
+  max-height: 50rem;
+}
+.slide {
+  background-color: #47597e;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.slide h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.slide img {
+  height: 60%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.left {
+  position: absolute;
+  color: white;
+  z-index: 111;
+  font-size: 3rem;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  cursor: pointer;
+}
+.right {
+  position: absolute;
+  color: white;
+  z-index: 111;
+  font-size: 3rem;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  cursor: pointer;
+}
+@media only screen and (max-width: 37.5em) {
+  .slide img {
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 728px) {
+  .container {
+    height: 30rem;
+  }
+  .slide {
+    padding: 2rem;
+  }
+  .slide h1 {
+    text-align: center;
+  }
+  .slide img {
+    height: 10rem;
+  }
+} ;

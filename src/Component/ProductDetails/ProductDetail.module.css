@@ -1,0 +1,119 @@
+.detailsPage {
+  height: 50rem;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  margin-top: 4rem;
+  /* overflow: hidden; */
+}
+
+.image img {
+  height: 80%;
+  margin: 2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.detail {
+  padding: 3rem;
+  text-align: center;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 50rem;
+}
+.detail h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.detail input {
+  font-size: 2rem;
+  outline: none;
+  border: 2px solid #777;
+  cursor: pointer;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.description {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.addToCart {
+  font-size: 2rem;
+  background-color: #293b5f;
+  color: white;
+  width: 70%;
+  margin: auto;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.confirmMessage {
+  font-size: 1.5rem;
+  background-color: lightblue;
+  padding: 1rem;
+  color: #293b5f;
+}
+@media only screen and (max-width: 768px) {
+  .detailsPage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image {
+    text-align: center;
+  }
+  .image img {
+    width: 80%;
+  }
+  .detail {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  .description {
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .detailsPage {
+    align-items: center;
+    width: 100%;
+  }
+  .detail h1 {
+    font-size: 2rem;
+    width: 25rem;
+  }
+  .detail {
+    padding: 0.5rem;
+    text-align: center;
+    color: #555;
+    min-width: 25rem;
+    width: 20rem;
+  }
+  .detail p {
+    width: 25rem;
+  }
+  .detail input {
+    font-size: 2rem;
+    outline: none;
+    border: 2px solid #777;
+    cursor: pointer;
+    width: 2rem;
+    /* margin: auto; */
+    margin-bottom: 2rem;
+    /* text-align: center; */
+    /* margin-left: 5rem; */
+  }
+  .detail button {
+    width: 10rem;
+    /* margin-left: 5rem; */
+  }
+  .detailsPage {
+    width: 25rem;
+  }
+}
